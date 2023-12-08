@@ -36,3 +36,6 @@ c. Decorator Interface: CarDecorator interface
 d. Concrete Decorators: CarWithAC and CarWithGPS classes
 
   A Concrete Decorator is a class that implements the Decorator Interface and adds functionality to the Component it decorates. In this example, the CarWithAC and CarWithGPS classes are Concrete Decorators that add functionality to the BasicCar Component. They both implement the CarDecorator interface and add the setCar() method to set the Component they will decorate. They also override the assemble() method of the Component to add their specific functionality (AC and GPS).
+
+![image](https://github.com/neoalaricv/decoratorPattern/assets/142380105/331ca2d2-aea9-4856-affa-9ca029096e0b)
+
