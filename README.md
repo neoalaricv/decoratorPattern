@@ -21,18 +21,18 @@ In Java, the Decorator Pattern is typically implemented using inheritance and co
 
 # A Working Example
 
-a.Component Interface: Car interface
+a. Component Interface: Car interface
 
-The Component Interface defines the methods that all Concrete Components and Decorators must implement. In this example, the Car interface defines the assemble() method, which all cars must implement.
+  The Component Interface defines the methods that all Concrete Components and Decorators must implement. In this example, the Car interface defines the assemble() method, which all cars must implement.
 
-b.Concrete Component: BasicCar class
+b. Concrete Component: BasicCar class
 
-A Concrete Component is the basic implementation of the Component Interface. In this example, the BasicCar class is the Concrete Component, which implements the Car interface and provides a basic implementation of the assemble() method.
+  A Concrete Component is the basic implementation of the Component Interface. In this example, the BasicCar class is the Concrete Component, which implements the Car interface and provides a basic implementation of the assemble() method.
 
-c.Decorator Interface: CarDecorator interface
+c. Decorator Interface: CarDecorator interface
 
-The Decorator Interface extends the Component Interface and defines additional methods that all Concrete Decorators must implement. In this example, the CarDecorator interface extends the Car interface and adds the setCar() method.
+  The Decorator Interface extends the Component Interface and defines additional methods that all Concrete Decorators must implement. In this example, the CarDecorator interface extends the Car interface and adds the setCar() method.
 
-d.Concrete Decorators: CarWithAC and CarWithGPS classes
+d. Concrete Decorators: CarWithAC and CarWithGPS classes
 
-A Concrete Decorator is a class that implements the Decorator Interface and adds functionality to the Component it decorates. In this example, the CarWithAC and CarWithGPS classes are Concrete Decorators that add functionality to the BasicCar Component. They both implement the CarDecorator interface and add the setCar() method to set the Component they will decorate. They also override the assemble() method of the Component to add their specific functionality (AC and GPS).
+  A Concrete Decorator is a class that implements the Decorator Interface and adds functionality to the Component it decorates. In this example, the CarWithAC and CarWithGPS classes are Concrete Decorators that add functionality to the BasicCar Component. They both implement the CarDecorator interface and add the setCar() method to set the Component they will decorate. They also override the assemble() method of the Component to add their specific functionality (AC and GPS).
